@@ -1,0 +1,196 @@
+body{
+	background: black;
+}
+.logo{
+	margin-top: -350px;
+        display:         flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+ 
+}
+
+body {
+  font-family: DejaVu Sans Mono, monospace;
+  padding: 50px;
+  margin: 0;
+  
+}
+
+nav {
+  width: 300px;
+  background: white;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-clip-path: circle(24px at 30px 24px);
+  clip-path: circle(24px at 32px 24px);
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: darkred;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a:hover { background: black; }
+
+a:active { background: black; }
+
+.perfil{
+  position: relative;
+  top: -205px;
+  left: -7px;
+  float:right;
+}
+
+.carrinho{
+  position: relative;
+  top: -205px;
+  float:right;
+  left:-18px;
+}
+
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+}
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
+
+
+.pesquisar{
+  
+    border-radius: 9px;
+    border-style: outset;
+    width: 400px;
+    height: 20px;
+    position:absolute; /* add daqui */
+    right:370px; /* margin da direita */
+    top:40%; // margin de 50% do topo */
+    transform:  translateY(-50%); /* desloca o elemento metade da própria altura para cima */
+    background-color: BLACK;
+
+}
+:-webkit-input-placeholder{
+    color:#1C1C1C;
+    background-color: #4682B4;
+    text-transform: uppercase;
+    font-style: bold;
+    font-size:15px;
+}
+input { color: #ffffff;
+font-family: DejaVu Sans Mono, monospace;} /* forma pedante */
+
+}
+input::placeholder {
+  color: red;
+}
+
+.pesquisar{
+
+	padding-left:50px;     /* Largura da imagem possui 20px */
+	padding-top:5px;       /* Só pra centralizar o texto verticalmente já que a altura da imagem é de 25px */
+	height:20px;                                               /* O padding influencia no tamanho do componente (é como se fosse 20px + 5px da altura) */
+	background-image:url(lupa.png);
+	background-repeat:no-repeat;                     /* Para não repetir o background ao longo de topo o componente */
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  left: -11px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
